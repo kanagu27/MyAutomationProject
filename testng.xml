@@ -1,14 +1,11 @@
 <suite name="Suite" parallel="tests">
-<!--   <TEST NAME="TESTGC"> -->
-<!--    <PARAMETER NAME="BROWSER" VALUE="CHROME"/> -->
-<!--     <PACKAGES> -->
-<!-- 	 <PACKAGE NAME="SCRIPT"/> -->
-<!-- 	</PACKAGES> -->
-<!--   </TEST> -->
-  <test name="TestFF">
-   <parameter name="browser" value="firefox"/>
-    <packages>
-	 <package name="script"/>
-	</packages>
+  <test name="Test">
+  <parameter name="browser"value="chrome"/>
+  <parameter name="ip"value="192.168.0.104"/>
+    <classes>
+      <class name="script.ValidLogin"/>
+      <class name="script.CheckProductVersion"/>
+      <class name="script.InvalidLogin"/>
+    </classes>
   </test>
-</suite>
+</suite> 
